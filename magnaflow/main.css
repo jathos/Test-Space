@@ -8,12 +8,42 @@
     font-weight: bolder;
 }
 
+.groundshipping {
+    letter-spacing: .7px;
+}
+
 .blackheader {
     background-color: #000005;
     height: 8vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+}
+
+.blackheaderleft {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blackheadermiddle {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.blackheaderright {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .magnalogo {
@@ -22,18 +52,19 @@
 }
 
 .menu {
+    display: inline-block;
     background-image: url(./images/hamburger.png);
-    width: 3%;
+    width: 15%;
     background-size: contain;
     background-color: white;
     background-repeat: no-repeat;
     height: 55%;
-    justify-self: flex-start;
 }
 
 .search {
+    display: inline-block;
     background-image: url(./images/search.png);
-    width: 3%;
+    width: 15%;
     background-size: contain;
     background-color: white;
     background-repeat: no-repeat;
@@ -41,21 +72,97 @@
     justify-self: flex-start;
 }
 
-.cart {
-    background-image: url(./images/shoppingcart.png);
-    width: 3%;
-    background-color: white;
+.login {
+    display: inline-block;
+    background-image: url(./images/avatar.png);
+    width: 15%;
     background-size: contain;
     background-color: white;
     background-repeat: no-repeat;
     height: 55%;
 }
 
-.login {
-    background-image: url(./images/avatar.png);
-    width: 3%;
+.cart {
+    display: inline-block;
+    background-image: url(./images/shoppingcart.png);
+    width: 15%;
+    background-color: white;
     background-size: contain;
     background-color: white;
     background-repeat: no-repeat;
     height: 55%;
+    justify-self: flex-end;
+}
+
+.parallax {
+    background-image: url(https://storage.googleapis.com/www.savvydealer.com/new/Ford/F-150/Raptor/2017/Main/2017-Ford-F-150-Raptor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 100%;
+    background-attachment: fixed;
+    padding-top: 20px;
+}
+
+.headlinecontainer {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 30%;
+    margin: 0px 0px 10px 50px;
+}
+
+.headlinetag {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 10%;
+    border-radius: 8px 0px;
+    padding: 8px;
+    transform: skewX(-10deg)
+}
+
+.headlinetag>p {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 10pt;
+    transform: skewX(10deg)
+}
+
+.headline>h1 {
+    color: white;
+    font-size: 40pt;
+    letter-spacing: -5px;
+    margin-bottom: 20px;
+}
+
+.headline>p {
+    color: white;
+    margin-top: 0px;
+}
+
+.shopexhaust {
+    /* display: inline-block; */
+    width: 60%;
+    height: 50px;
+    background-color: #FDE022;
+    border: solid;
+    border-color: #FDE022;
+    border-radius: 30px;
+    padding: 12px 20px 12px 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.shopbyvehicle {
+    height: 35vh;
+    background-color: #333333;
+    /* transform: skewY(2deg) */
+    padding-top: 50px;
+}
+
+.shopbyvehicle>h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
 }
